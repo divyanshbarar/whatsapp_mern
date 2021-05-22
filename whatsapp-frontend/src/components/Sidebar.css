@@ -1,0 +1,68 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid rgb(196, 188, 188);
+}
+.sidebar__avatar {
+  padding: 0px;
+  /* border-inline: 2px solid rgb(255, 255, 255); */
+  border: 3px solid rgb(28, 201, 22);
+}
+.sidebar__headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #fff6f6;
+  height: 39px;
+  padding: 10px;
+}
+
+.sidebar__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 35px;
+  border-radius: 20px;
+}
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+.sidebar__searchContainer > input {
+  border: none;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  outline-width: 0;
+  margin-left: 10px;
+}
+
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+.sidebar__chats ::-webkit-scrollbar {
+  display: none;
+}
+.sidebar__chats {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(201, 201, 201);
+}
+.app__body {
+  display: flex;
+  background-color: #ededed;
+  height: 90vh;
+  width: 90vw;
+  margin-top: -50px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 768px) {
+  .app {
+    display: none;
+
+    /* background-image: url("https://st2.depositphotos.com/1890869/10343/v/950/depositphotos_103434898-stock-illustration-do-not-use-mobile-phone.jpg"); */
+  }
+}
